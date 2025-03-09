@@ -1,0 +1,115 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: radial-gradient( rgba(255, 255, 255, 45) 20%, #111 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 60px;
+}
+
+
+.airpods {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+    padding: 40px;
+    border-radius: 15px;
+    background: radial-gradient( rgba(54, 54, 54, 0.1) 10%, #222 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.content {
+    max-width: 500px;
+}
+
+.content h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.content h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.headphones img {
+    max-width: 100%;
+    width: 300px;
+    animation: float 3s infinite ease-in-out;
+}
+
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+@media (max-width: 768px) {
+    .airpods {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headphones img {
+        width: 250px;
+    }
+}
+
